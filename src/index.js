@@ -19,7 +19,7 @@ class WebpackFullhashTxtPlugin {
                 };
 
                 compilation.chunks.forEach(function (item) {
-                    if(!chunk.isInitial()) {
+                    if(!item.isInitial()) {
                         return;
                     }
                     hashMap[item.name] = {
@@ -45,7 +45,7 @@ class WebpackFullhashTxtPlugin {
                     hashMap[chunk.name] = {
                         chunkHash: chunk.hash,
                         files: chunk.files,
-                        // contentHash: item.contentHash
+                        // contentHash: chunk.contentHash
                     };
                     callback();
                 });

@@ -1,6 +1,6 @@
 {
   "name": "webpack-fullhash-txt-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Use the webpack fullhash txt plugin, you can output the fullhash into a custom file, this is useful for version controlling of the whole project.",
   "main": "src/index.js",
   "scripts": {
