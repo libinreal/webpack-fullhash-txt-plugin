@@ -29,7 +29,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     new WebpackFullhashTxtPlugin({
       // You must set the cb option
       cb: function(hashMap) {
-        console.log(hashMap);
+        console.log(JSON.stringify(hashMap));
         /* do something, the hashMap like this:
         {
           hash: '6f0486fb6449204e4b3db696f95df4bc',
