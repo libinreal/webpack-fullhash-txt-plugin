@@ -42,7 +42,7 @@ const webpackConfig = merge(baseWebpackConfig, {
             files: [ 'js/vendor_fdf3345a.js' ]
           }
         }*/
-        fs.writeFileSync(path.join(__dirname, '../app_fullhash.txt'), hashMap.hash);   
+        fs.writeFileSync(path.join(__dirname, '../app_fullhash.txt'), JSON.stringify(hashMap));
       }
     }),
     ...
