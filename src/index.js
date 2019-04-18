@@ -18,7 +18,7 @@ class WebpackFullhashTxtPlugin {
                     hash: compilation.fullHash
                 };
 
-                compilation.chunks.forEach(function (item) {
+                /*compilation.chunks.forEach(function (item) {
                     if(!item.isInitial()) {
                         return;
                     }
@@ -27,7 +27,7 @@ class WebpackFullhashTxtPlugin {
                         files: item.files,
                         // contentHash: item.contentHash
                     };
-                });
+                });*/
 
                 this.options.cb(hashMap);
             });
@@ -37,7 +37,7 @@ class WebpackFullhashTxtPlugin {
                     hash: compilation.fullHash
                 };
                 compilation.chunks.forEach(chunk => {
-                    if(!chunk.isInitial()) {
+                    /*if(!chunk.isInitial()) {
                         callback();
                         return;
                     }
@@ -46,7 +46,7 @@ class WebpackFullhashTxtPlugin {
                         chunkHash: chunk.hash,
                         files: chunk.files,
                         // contentHash: chunk.contentHash
-                    };
+                    };*/
                     callback();
                 });
 
